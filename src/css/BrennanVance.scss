@@ -1,0 +1,56 @@
+@import '../../bower_components/bourbon/app/assets/stylesheets/_bourbon';
+@import url(https://fonts.googleapis.com/css?family=Palanquin:100);
+
+* { @include box-sizing(border-box); }
+
+$text-color: #4F504C;
+
+body {
+    background-color: #E5E6E2;
+    color: $text-color;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 100;
+    margin: 0 auto;
+    width: 640px;
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: $text-color;
+    }
+}
+
+.c-nav {
+    margin: 30px 0 10px;
+}
+
+    .c-nav__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .c-nav__list__item {
+            display: inline-block;
+            font-size: 1.2em;
+            margin-right: 15px;
+        }
+
+video::-webkit-media-controls-timeline {
+    color: white;
+    background-color: transparentize(white, 0.5);
+    border-color: white;
+}
+
+video::-webkit-media-controls-timeline-container {
+    $border: 1px solid transparentize(black, 1);
+    border-right: $border;
+    border-left: $border;
+}

@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Palanquin:100);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #E5E6E2;
+  color: #4F504C;
+  font-family: 'Palanquin', sans-serif;
+  font-weight: 100;
+  margin: 0 auto;
+  width: 640px; }
+
+a {
+  color: #4F504C;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  a:visited {
+    color: #4F504C; }
+
+.c-nav {
+  margin: 30px 0 10px; }
+
+.c-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.c-nav__list__item {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-right: 15px; }
+
+video::-webkit-media-controls-timeline {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: white; }
+
+video::-webkit-media-controls-timeline-container {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent; }
