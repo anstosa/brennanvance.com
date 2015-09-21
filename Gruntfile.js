@@ -42,7 +42,8 @@ module.exports = function(grunt) {
                 algorithm: 'md5',
                 length: 8
             },
-            css:    { src: 'dist/css/*' }
+            css:    { src: 'dist/css/*' },
+            js:    { src: 'dist/js/*' }
         },
         jade: {
             index: {
