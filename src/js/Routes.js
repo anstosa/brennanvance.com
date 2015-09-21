@@ -3,10 +3,10 @@ var DEPENDENCIES = ['$routeProvider'];
 function Routes($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl : '/dist/partials/home.html'
+            templateUrl : 'dist/partials/home.html'
         })
         .when('/contact', {
-            templateUrl : '/dist/partials/contact.html'
+            templateUrl : 'dist/partials/contact.html'
         })
     ;
 }
