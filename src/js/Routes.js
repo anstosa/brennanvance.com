@@ -1,4 +1,6 @@
-angular.module('brennanvance').config(function($routeProvider) {
+var DEPENDENCIES = ['$routeProvider'];
+
+function Routes($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl : '/dist/partials/home.html'
@@ -7,4 +9,7 @@ angular.module('brennanvance').config(function($routeProvider) {
             templateUrl : '/dist/partials/contact.html'
         })
     ;
-});
+}
+
+Routes.$inject = DEPENDENCIES;
+angular.module('brennanvance').config(Routes);
