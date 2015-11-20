@@ -94,7 +94,8 @@ module.exports = function(grunt) {
     grunt.registerTask('default', [
         'jshint',
         'jade',
-        'sass'
+        'sass',
+        'copy'
     ]);
 
     grunt.registerTask('release', [
